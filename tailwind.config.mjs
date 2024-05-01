@@ -7,12 +7,14 @@ export default {
 		},
 		extend: {
 			colors: {
-				"white-main": '#FFFFFF',
-				"white-ligth": '#F7F7F7',
-				"gray-main": '#D3D4D5',
-				"black-main": '#000000',
-				"black-ligth": '#0f0f0f',
-				"green-main": '#C1FF72'
+				whiteMain: '#FFFFFF',
+				whiteLigth: '#F7F7F7',
+				grayMain: '#B3B3B3',
+				grayStrong: "#282828",
+				blackMain: '#000000',
+				blackNormal: "#181818",
+				blackLigth: '#0f0f0f',
+				greenMain: '#1ed760',
 			},
 		},
 	},

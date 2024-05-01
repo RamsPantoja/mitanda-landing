@@ -5,276 +5,95 @@ export const prerender = true;
 ---
 
 <Layout title="Mitanda - Crea, gestiona y participa en tandas">
-	<div class="flex flex-col w-full gap-8 justify-start items-center relative">
-		<div class="max-w-7xl w-full flex flex-col relative">
+	<div
+		class="flex flex-col w-full gap-8 justify-start items-center text-whiteMain"
+	>
+		<div class="h-full w-full bg-slate-950">
 			<div
-				class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"
+				class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"
 			>
 			</div>
+		</div>
+		<div class="max-w-7xl w-full flex flex-col">
 			<div
 				class="max-w-7xl w-full flex flex-col pt-32 pb-32 pr-4 pl-4 gap-4 z-[1]"
 			>
-				<div class="flex justify-center">
-					<div
-						class="bg-gradient-to-r from-green-400 to-blue-500 animate-pulse hover:from-pink-500 hover:to-yellow-500 ... w-fit cursor-default p-2 bg-clip-text"
-					>
-						<p
-							class="text-center text-2xl font-black text-transparent"
-						>
-							¡Próximamente!
-						</p>
-					</div>
-				</div>
 				<h1
-					class="leading-tight text-6xl text-black-main font-bold text-center"
+					class="leading-tight text-6xl text-black-main font-bold text-center text-whiteMain"
 				>
 					Tu espacio seguro y transparente para crear, gestionar y
-					unirte a tandas de manera confiable.
+					unirte a tandas.
 				</h1>
-				<h2 class="text-2xl text-black-ligth text-center pt-4">
+				<h2
+					class="text-2xl text-black-ligth text-center pt-4 text-whiteMain"
+				>
 					Uniendo esfuerzos, multiplicando beneficios.
 				</h2>
 				<div
 					class="flex flex-row w-full gap-4 items-center justify-center pt-8"
 				>
 					<Image
-						src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Fteam-building-5.png?alt=media&token=db4c3ba2-e13a-43e2-a3fb-3a50f1d07bba"
+						src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Fbatch_overview.png?alt=media&token=d7275244-da8e-4ef7-adaf-c28dcaf916f4"
 						alt="A bird."
-						width="200"
+						width="1200"
 						height="200"
 					/>
 				</div>
 			</div>
 		</div>
 		<section
-			class="max-w-7xl w-full flex flex-col pt-32 pb-32 pr-4 pl-4 gap-4 items-center justify-center"
-		>
-			<h4
-				class="leading-tight text-6xl text-black-main font-bold text-center"
-			>
-				¿Por qué <b>Mitanda</b>?
-			</h4>
-			<div class="max-w-xl flex flex-col gap-4">
-				<p>
-					Una "tanda" en México se refiere a un sistema de ahorro
-					colectivo. Un grupo de personas se reúne y contribuye con
-					una cierta cantidad de dinero regularmente.
-				</p>
-				<p>
-					Usualmente, las tandas se organizan entre amigos, familiares
-					o compañeros de trabajo con el propósito de crear un fondo
-					de ahorro colectivo. Aunque esta práctica es común, surge un
-					inconveniente importante: se trata de un sistema no
-					formalizado e inseguro para los participantes de la tanda.
-				</p>
-				<p>
-					Asegurar que todos los miembros de una tanda paguen lo que
-					les corresponde requiere un enfoque claro y algunas medidas
-					de organización.
-				</p>
-				<p>
-					<b>Mitanda</b> surge con la finalidad de formalizar este sistema
-					de ahorro, fomentando la transparencia, la comunicación y la
-					seguridad, al mismo tiempo que establece reglas claras desde
-					el inicio.
-				</p>
-			</div>
-		</section>
-		<section
 			class="max-w-7xl w-full flex flex-col pt-32 pb-32 pr-4 pl-4 gap-4"
 		>
-			<div class="flex flex-col sm:flex-col md:flex-row gap-4 justify-between">
-				<div class="max-w-xl flex flex-col gap-4">
-					<p class="text-2xl font-bold">Contrato Digital</p>
-					<p class="text-base">
-						Con la función de Contrato Digital, <b>Mitanda</b> facilita
-						la formalización de tus tandas desde la palma de tu mano.
-						Al iniciar una nueva tanda, crea un contrato detallado con
-						reglas personalizadas y obligaciones para cada participante.
-						Define la cantidad a contribuir, la frecuencia de los pagos,
-						y establece consecuencias claras en caso de incumplimiento.
-					</p>
-				</div>
-				<Image
-					src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Fpartnership-1.png?alt=media&token=340ec8cb-89ed-4731-9b2a-c89f306dc26c"
-					alt="A bird."
-					width="200"
-					height="200"
-					class={" object-contain"}
-				/>
-			</div>
-		</section>
-		<section
-			class="max-w-7xl w-full flex flex-col pt-32 pb-32 pr-4 pl-4 gap-4"
-		>
-			<div class="flex flex-col-reverse sm:flex-col-reverse md:flex-row gap-4 justify-between w-full">
-				<Image
-					src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Faccountant.png?alt=media&token=734e6c5e-d746-4da1-b6e6-ae222f4ab939"
-					alt="A bird."
-					width="200"
-					height="200"
-					class={" object-contain"}
-				/>
+			<div class="flex flex-col md:flex-row gap-4 justify-between w-full">
 				<div class="max-w-xl flex flex-col gap-4">
 					<p class="text-2xl font-bold">Registro Detallado</p>
 					<p class="text-base">
-						Lleva un registro detallado de cada contribución y pago
-						fácilmente con la función de Registro Digital de
-						<b>Mitanda</b>. A través de nuestra aplicación dedicada,
-						mantén un seguimiento claro de quién ha contribuido y
-						quién no, asegurando una gestión eficiente de tu tanda.
-					</p>
-				</div>
-			</div>
-		</section>
-		<section
-			class="max-w-7xl w-full flex flex-col pt-32 pb-32 pr-4 pl-4 gap-4"
-		>
-			<div class="flex flex-col sm:flex-col md:flex-row gap-4 justify-between w-full">
-				<div class="max-w-xl flex flex-col gap-4">
-					<p class="text-2xl font-bold">Comunicación Clara</p>
-					<p class="text-base">
-						Fomenta una comunicación abierta y clara mediante la
-						función de Comunicación Transparente de <b>Mitanda</b>.
-						Mantén a todos los participantes informados sobre las
-						fechas de contribución y cualquier cambio en el plan a
-						través de notificaciones instantáneas y mensajes
-						directos, asegurando que todos estén siempre al tanto.
+						A través de nuestra aplicación, mantén un seguimiento
+						claro de quién ha contribuido y quién no, asegurando una
+						gestión eficiente de tu tanda.
 					</p>
 				</div>
 				<Image
-					src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Fteam-building-6.png?alt=media&token=82616a8d-0eec-4d2c-ba59-4589be1ccb95"
+					src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Fcontribution_registers.png?alt=media&token=a343dcb9-74de-49d6-9529-cd8b42630737"
 					alt="A bird."
-					width="200"
+					width="350"
 					height="200"
-					class={" object-contain"}
+					class={" object-contain rounded-md"}
 				/>
 			</div>
 		</section>
 		<section
 			class="max-w-7xl w-full flex flex-col pt-32 pb-32 pr-4 pl-4 gap-4"
 		>
-			<div class="flex flex-col-reverse sm:flex-col-reverse md:flex-row gap-4 justify-between w-full">
-				<Image
-					src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Fpayment-processed-3.png?alt=media&token=f23137d1-6ebc-489d-8cc2-5eead610963a"
-					alt="A bird."
-					width="200"
-					height="200"
-					class={" object-contain"}
-				/>
-				<div class="max-w-xl flex flex-col gap-4">
-					<p class="text-2xl font-bold">
-						Métodos de Pago Rastreables
-					</p>
-					<p class="text-base">
-						Garantiza la seguridad financiera con la función de
-						Pagos Rastreables de <b>Mitanda</b>. Utiliza métodos de
-						pago seguros, como transferencias bancarias y
-						aplicaciones de pago en línea, para asegurar un registro
-						claro y detallado de todas las transacciones realizadas
-						en el marco de tu tanda.
-					</p>
+			<div
+				class="flex flex-col-reverse sm:flex-col-reverse md:flex-row gap-4 justify-between w-full items-start"
+			>
+				<div class="flex flex-col gap-2">
+					<Image
+						src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Finvite_link.png?alt=media&token=c7bfbc2f-d9c8-429d-8943-cc6284378c7d"
+						alt="A bird."
+						width="500"
+						height="200"
+						class={" object-contain rounded-md"}
+					/>
+					<Image
+						src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Fparticipants.png?alt=media&token=3457a263-1f75-426f-bf37-0534c5684d8d"
+						width="250"
+						height="200"
+						class={" object-contain rounded-md"}
+						alt="A bird."
+					/>
 				</div>
-			</div>
-		</section>
-		<section
-			class="max-w-7xl w-full flex flex-col pt-32 pb-32 pr-4 pl-4 gap-4"
-		>
-			<div class="flex flex-col sm:flex-col md:flex-row gap-4 justify-between w-full">
-				<div class="max-w-xl flex flex-col gap-4">
-					<p class="text-2xl font-bold">
-						Recordatorios Automatizados
-					</p>
-					<p class="text-base">
-						No te pierdas ninguna fecha de contribución con la
-						función de Recordatorios Automáticos de <b>Mitanda</b>.
-						Recibe notificaciones a través de mensajes de texto,
-						correos electrónicos o la aplicación, asegurándote de
-						que todos los participantes estén al tanto de las fechas
-						importantes de tu tanda.
-					</p>
-				</div>
-				<Image
-					src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Frecieve-notification-2.png?alt=media&token=4830a5b7-6650-4356-bffc-6ca38946ebdc"
-					alt="A bird."
-					width="200"
-					height="200"
-					class={" object-contain"}
-				/>
-			</div>
-		</section>
-		<section
-			class="max-w-7xl w-full flex flex-col pt-32 pb-32 pr-4 pl-4 gap-4"
-		>
-			<div class="flex flex-col-reverse sm:flex-col-reverse md:flex-row gap-4 justify-between w-full items-start">
-				<Image
-					src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Fsecurity-shield.png?alt=media&token=a96f1f6e-a71d-4b8d-b235-1e8ad040ad0a"
-					alt="A bird."
-					width="200"
-					height="200"
-					class={" object-contain"}
-				/>
 				<div class="max-w-xl flex flex-col gap-8">
 					<p class="text-2xl font-bold">
-						Seguridad e Integridad garantizadas
+						Ahorra con Amigos y Familiares
 					</p>
 					<p class="text-base">
-						Confía en la robusta seguridad de <b>Mitanda</b>,
-						respaldada por características diseñadas para proteger
-						la integridad de tus tandas:
-					</p>
-					<ol class="flex flex-col gap-4">
-						<li>
-							<p class="text-base">
-								<strong>Acceso Seguro:</strong>
-							</p><ul>
-								<li class="text-base">
-									Garantiza la seguridad de tus datos con un
-									acceso seguro y encriptado a través de la
-									autenticación de dos factores.
-								</li>
-							</ul>
-						</li><li>
-							<p class="text-base">
-								<strong
-									>Historial de Transacciones Seguro:</strong
-								>
-							</p><ul>
-								<li class="text-base">
-									Mantén la integridad del historial de
-									transacciones con almacenamiento seguro y a
-									prueba de manipulaciones.
-								</li>
-							</ul>
-						</li>
-						<li>
-							<p class="text-base">
-								<strong>Verificación de Participantes:</strong>
-							</p><ul>
-								<li class="text-base">
-									Asegura la legitimidad de los participantes
-									con verificaciones adicionales para mantener
-									la integridad de la comunidad de la tanda.
-								</li>
-							</ul>
-						</li><li>
-							<p class="text-base">
-								<strong>Comunicación Privada:</strong>
-							</p><ul>
-								<li class="text-base">
-									Disfruta de una comunicación segura y
-									privada entre los participantes, protegiendo
-									la confidencialidad de la información
-									financiera.
-								</li>
-							</ul>
-						</li>
-					</ol>
-					<p class="text-base">
-						Con <b>Mitanda</b>, la seguridad y la integridad de tu
-						experiencia en tandas están en el centro de nuestras
-						prioridades, brindándote tranquilidad en cada paso del
-						camino.
+						¡Invita a tus amigos y familiares a unirse a la tanda
+						con este enlace! Ahorra de forma divertida y segura con
+						este sistema tradicional de ahorro. Comparte este enlace
+						y disfruta de los beneficios de la comunidad en la
+						tanda.
 					</p>
 				</div>
 			</div>
@@ -287,25 +106,43 @@ export const prerender = true;
 			>
 				<div class="max-w-xl flex flex-col gap-4">
 					<p class="text-2xl font-bold">
-						Administración Automatizada de Tandas
+						Mantén un registro de tus ganancias
 					</p>
 					<p class="text-base">
-						En <b>Mitanda</b>, no necesitas un mediador externo; el
-						propio sistema se encarga de administrar la tanda. <b
-							>Mitanda</b
-						>
-						automatiza la asignación de turnos para garantizar un juego
-						parejo, eliminando la dependencia de una persona específica
-						que haya creado la tanda. Esta característica permite un
-						sistema más justo y controlado para todos los participantes.
+						Lleva un control preciso de tus finanzas en la sección
+						Balance y visualiza tus ganancias por tanda, total
+						acumulado y fechas.
 					</p>
 				</div>
 				<Image
-					src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Finput-data-to-an-algorithm.png?alt=media&token=b7cc7fc5-cc53-4004-91e8-848d79479c59"
+					src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Fbalance.png?alt=media&token=3e52dca3-5023-415f-aa3a-54d1c66b2030"
 					alt="A bird."
-					width="200"
+					width="600"
+					height="300"
+					class={" object-contain rounded-md"}
+				/>
+			</div>
+		</section>
+		<section
+			class="max-w-7xl w-full flex flex-col pt-32 pb-32 pr-4 pl-4 gap-4"
+		>
+			<div class="flex flex-col md:flex-row gap-4 justify-between w-full">
+				<div class="max-w-xl flex flex-col gap-4">
+					<p class="text-2xl font-bold">Creación de tandas</p>
+					<p class="text-base">
+						Disfruta de la creación gratuita de tu primera tanda y
+						continúa organizando tandas posteriores por una pequeña
+						tarifa de <span class="text-greenMain font-bold"
+							>99 MXN</span
+						> cada una.
+					</p>
+				</div>
+				<Image
+					src="https://firebasestorage.googleapis.com/v0/b/mitanda.appspot.com/o/assets%2Fbatches.png?alt=media&token=709a8944-f53b-4fcd-9dc0-58d241f3ce07"
+					alt="A bird."
+					width="450"
 					height="200"
-					class={" object-contain"}
+					class={" object-contain rounded-md"}
 				/>
 			</div>
 		</section>
