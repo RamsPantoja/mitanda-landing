@@ -6,48 +6,78 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Tu espacio seguro y transparente para crear, gestionar y
-		unirte a tandas de manera confiable." />
+		<meta
+			name="description"
+			content="Tu espacio seguro y transparente para crear, gestionar y
+		unirte a tandas de manera confiable."
+		/>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/mitanda-isotipo.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-
 	</head>
 	<body class="bg-blackMain">
 		<div class="flex flex-col w-full items-center justify-start gap-4">
 			<header
 				class="flex flex-row items-center justify-between p-4 max-w-7xl w-full sticky top-0 z-10 bg-blackLigth rounded-md"
 			>
-				<div
-					class="p-1 flex flex-row items-center justify-between gap-4"
-				>
-					<img src="/mitanda-isotipo.svg" height={40} width={40} />
-					<p class="text-whiteMain text-2xl font-bold">
-						Mitanda
-					</p>
-				</div>
-				<!-- <a
-                    href="https://app.mitanda.xyz"
+				<a href="/">
+					<div
+						class="p-1 flex flex-row items-center justify-between gap-4"
+					>
+						<img
+							src="/mitanda-isotipo.svg"
+							height={40}
+							width={40}
+						/>
+						<p class="text-whiteMain text-2xl font-bold">Mitanda</p>
+					</div>
+				</a>
+				<a
+					href="https://app.mitanda.xyz"
 					target="_blank"
-                    class="p-3 outline-none text-sm rounded-lg bg-greenMain text-black-main font-semibold"
-                    >Ir a la app</a
-                > -->
+					class="p-3 outline-none text-sm rounded-lg bg-greenMain text-black-main font-semibold"
+					>Ir a la app</a
+				>
 			</header>
 			<main class="w-full">
 				<slot />
 			</main>
-			<footer
-				class="w-full flex items-start justify-center bg-blackNormal p"
-			>
-				<div class="max-w-7xl w-full flex flex-col gap-4 p-8">
-					<!-- <span class="text-xs text-whiteMain"
-						>Mitanda ® es una marca registrada, todos los
-						derechos reservados {new Date().getFullYear()}</span
-					> -->
-					<span class="text-xs text-whiteMain"
-						>Hecho con amor ♥️</span
-					>
+			<footer class="w-full flex items-start bg-blackNormal">
+				<div class="max-w-7xl w-full flex gap-12 p-8">
+					<div class="flex flex-col gap-4">
+						<div class="p-1 flex flex-row items-center gap-2">
+							<img
+								src="/mitanda-isotipo.svg"
+								height={30}
+								width={30}
+							/>
+							<p class="text-whiteMain text-lg font-bold">
+								Mitanda
+							</p>
+						</div>
+						<span class="text-xs text-grayMain"
+							>Todos los derechos reservados {
+								new Date().getFullYear()
+							}</span
+						>
+						<span class="text-xs text-grayMain"
+							>Hecho con amor ♥️</span
+						>
+					</div>
+					<div class="flex flex-col gap-2">
+						<p class="text-grayMain font-bold mb-2">Legal</p>
+						<a
+							href="tos"
+							class="text-sm text-whiteMain hover:underline"
+							>Terminos y condiciones</a
+						>
+						<a
+							href="privacy_policy"
+							class="text-sm text-whiteMain hover:underline"
+							>Política de privacidad</a
+						>
+					</div>
 				</div>
 			</footer>
 		</div>
