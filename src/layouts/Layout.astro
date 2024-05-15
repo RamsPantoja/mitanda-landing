@@ -33,12 +33,19 @@ const { title } = Astro.props;
 						<p class="text-whiteMain text-2xl font-bold">Mitanda</p>
 					</div>
 				</a>
-				<a
-					href="https://app.mitanda.xyz"
-					target="_blank"
-					class="p-3 outline-none text-sm rounded-lg bg-greenMain text-black-main font-semibold"
-					>Ir a la app</a
-				>
+				<div class="flex gap-8 items-center">
+					<a
+						class="Demo text-whiteMain hover:underline"
+						href="https://www.youtube.com/watch?v=zQbDzOLWGvI"
+						target="_blank">Demo</a
+					>
+					<a
+						href="https://app.mitanda.xyz"
+						target="_blank"
+						class="p-3 outline-none text-sm rounded-lg bg-greenMain text-black-main font-semibold"
+						>Ir a la app</a
+					>
+				</div>
 			</header>
 			<main class="w-full">
 				<slot />
@@ -76,6 +83,15 @@ const { title } = Astro.props;
 							href="privacy_policy"
 							class="text-sm text-whiteMain hover:underline"
 							>Política de privacidad</a
+						>
+					</div>
+					<div class="flex flex-col gap-2">
+						<p class="text-grayMain font-bold mb-2">Enlaces</p>
+						<a
+							href="mailto:ramspantoja@gmail.com"
+							class="text-sm text-whiteMain hover:underline"
+							target="_blank"
+							>Soporte</a
 						>
 					</div>
 				</div>
